@@ -1,0 +1,30 @@
+[
+  {
+    "translationSchema": {
+      "Line": "Line",
+      "currentR/10": "currentPhaseR",
+      "currentS/10": "currentPhaseS",
+      "currentT/10": "currentPhaseT",
+      "voltageR": "voltageR",
+      "voltageS": "voltageS",
+      "voltageT": "voltageT",
+      "entryEndTime": "sourceLabel",
+      "idState"   : "class"
+    },
+    "type"  : "sql",
+    "configFile":  "~/rearmdbConfig.json",
+    "motorCurrentRMS": 4.0,
+    "motorVoltageRMS": 230,
+    "divideByColumn": "Line",
+    "rowsPerDividerColumn": 20,
+    "datasets": [
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime > '2016-11-25 14:13:34' and entryEndTime < '2016-11-25 16:20:33'",
+        "label"   : "Load Healthy",
+        "decimatedMagnitude":  1,
+        "class" : "Healthy"
+      }
+    ]
+  }
+]

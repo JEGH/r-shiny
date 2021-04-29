@@ -1,0 +1,13 @@
+name: REARMApp
+title: REARMApp
+username:
+account: helloshinyapp
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 253041
+bundleId: 1162989
+url: https://helloshinyapp.shinyapps.io/REARMApp/
+when: 1515148446.73045
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: test2.RData|data

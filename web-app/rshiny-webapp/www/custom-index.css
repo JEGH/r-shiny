@@ -1,0 +1,8 @@
+.content-wrapper,
+.right-side {
+  background-color: #FFFFFF;
+  background-image: url('img-background.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  
+}

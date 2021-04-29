@@ -1,0 +1,78 @@
+[
+  {
+    "translationSchema": {
+      "Line": "Line",
+      "currentR/10": "currentPhaseR",
+      "currentS/10": "currentPhaseS",
+      "currentT/10": "currentPhaseT",
+      "voltageR": "voltageR",
+      "voltageS": "voltageS",
+      "voltageT": "voltageT",
+      "entryEndTime": "sourceLabel"
+    },
+    "type"  : "sql",
+    "configFile": "~/rearmdbConfig.json",
+    "motorCurrentRMS": 4.0,
+    "motorVoltageRMS": 230,
+    "divideByColumn": "Line",
+    "rowsPerDividerColumn": 20,
+    "datasets": [
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-11-30 16:46:39' and entryEndTime <= '2016-11-30 17:15:39'",
+        "label"   : "Load SC B 2.5A 13-22",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.396
+      },
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-11-30 17:23:39' and entryEndTime <= '2016-11-30 17:55:38'",
+        "label"   : "Load SC B 2.5A 14-23",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.396
+      },
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-11-29 09:47:57' and entryEndTime <= '2016-11-29 10:15:57'",
+        "label"   : "Load SC B 2.5A 15-24",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.396
+      },
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-11-29 10:22:57' and entryEndTime <= '2016-11-29 10:57:57'",
+        "label"   : "Load SC B 2.5A 31-4",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.396
+      },
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-11-29 11:09:57' and entryEndTime <= '2016-11-29 11:45:56'",
+        "label"   : "Load SC B 2.5A 32-5",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.396
+      },
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-11-29 11:53:56' and entryEndTime <= '2016-11-29 12:24:56'",
+        "label"   : "Load SC B 2.5A 33-6",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.396
+      },
+      {
+        "from": "rearm.Monitoring",
+        "where": "entryEndTime >= '2016-12-02 15:04:28' and entryEndTime <= '2016-12-02 15:29:28'",
+        "label"   : "Load SC B 2.5A b2-13",
+        "decimatedMagnitude":  1,
+        "class" : "Faulty",
+        "target" : 0.354
+      }
+    ]
+  }
+]
