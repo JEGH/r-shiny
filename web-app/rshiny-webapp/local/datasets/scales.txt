@@ -1,3 +1,0 @@
-Voltage: 1:500
-Current: 100 mV/A
-Speed: 60 pulses/rotation
