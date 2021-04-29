@@ -1,1 +1,1 @@
-# REARM Web Application
+# Demo Open Web Application
